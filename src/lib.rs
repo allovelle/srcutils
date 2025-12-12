@@ -56,7 +56,7 @@ impl Sentinel
         (line, col)
     }
 
-    /// Add a character (non-newline).
+    /// Add a character can be a logical new line.
     pub fn push_char(&mut self)
     {
         self.total_chars += 1;
