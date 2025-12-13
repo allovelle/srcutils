@@ -1,6 +1,7 @@
+mod dbg;
 mod offset;
 
-pub use offset::*;
+pub use {dbg::*, offset::*};
 
 /// A logical line and charcter position in a source file. Does not correlate to
 /// byte offset & length. For byte offset & length, use [crate::SrcOffset].
