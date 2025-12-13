@@ -1,4 +1,7 @@
+use std::fmt;
+
 impl<T: fmt::Debug> ToDebug for T {}
+
 pub trait ToDebug: fmt::Debug
 {
     /// Equivalent to `format!("{:?}", thing);`
